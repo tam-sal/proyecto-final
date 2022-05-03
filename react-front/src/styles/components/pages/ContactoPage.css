@@ -1,0 +1,83 @@
+.container-contacto {
+  display: flex;
+  padding: 0.5em;
+}
+.formulario {
+  width: 60%;
+}
+.contacto-formulario {
+  display: flex;
+  flex-flow: column;
+  align-items: left;
+  justify-content: center;
+}
+.contacto-formulario label {
+  margin: 0.3em 0.6em 0.3em 0em;
+}
+.contacto-formulario input {
+  margin: 5px 10px 5px 0;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+.contacto-formulario option {
+  margin: 5px 10px 5px 0;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+.contacto-formulario textarea {
+  resize: none;
+  height: 30%;
+}
+.contacto-formulario button {
+  padding: 0.8em 0.8em;
+  margin-top: 0.4em;
+  background-color: dodgerblue;
+  border: 1px solid #ddd;
+  color: white;
+  border: 1px solid darkblue;
+  border-radius: 0.2em;
+  cursor: pointer;
+}
+.contacto-formulario button:hover {
+  background-color: royalblue;
+}
+
+.otras-vias {
+  width: 40%;
+  padding: 0.7em;
+  margin-left: 1.5em;
+  margin-right: 0;
+}
+
+.lista-contacto {
+  list-style: none;
+  padding-left: 0px;
+}
+
+.fa-phone-square-alt,
+.fa-envelope,
+.skype {
+  color: darkblue;
+  box-sizing: border-box;
+  padding: 0;
+  display: inline;
+  box-shadow: none;
+  margin-right: 0.4em;
+  background: none;
+  font-size: 1.5em;
+  opacity: 0.7;
+  transition: all 0.5s ease;
+}
+.fa-phone-square-alt:hover,
+.fa-envelope:hover,
+.skype:hover {
+  box-shadow: none;
+  filter: none;
+}
+.fa-phone-square-alt:hover,
+.fa-envelope:hover,
+.skype:hover {
+  opacity: 1;
+}
