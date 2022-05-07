@@ -1,9 +1,8 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
-import itemNovedad from '../components/novedades/itemNovedad';
+import ItemNovedad from './../components/novedades/itemNovedad';
 import {Link} from 'react-router-dom';
 import '../styles/components/pages/NovedadesPage.css'
-
 
 
 const NovedadesPage = (props) => {
@@ -14,6 +13,7 @@ const NovedadesPage = (props) => {
     const cargarNovedades = async () => {
       setLoading(true)
       const response = await axios.get('http://localhost:3000/api/novedades')
+      console.log(response)
       setNovedades(response.data)
       setLoading(false)
     }
@@ -35,7 +35,7 @@ const NovedadesPage = (props) => {
     {loading ? (
       <p>Cargando...</p>
     ): (
-      novedades.map(item=> <itemNovedad key={item.id}
+        novedades.map(item => <ItemNovedad key={item.id}
         title={item.titulo} subtitle={item.subtitulo}
         imagen={item.imagen} body={item.cuerpo} />)
     )}
@@ -43,7 +43,7 @@ const NovedadesPage = (props) => {
   </section>
      )
 }
-export default NovedadesPage
+export default NovedadesPage;
 
 // const NovedadesPage = (props) => {return (
 //     <main className="contenido holder">
