@@ -8,7 +8,7 @@ const ContactoPage = (props) => {
   const initialForm = {
     nombre: '',
     correo: '',
-    telefono:'',
+    telefono: '',
     mensaje: ''
   }
 
@@ -56,12 +56,13 @@ return (
               />
               <label for="correo">Email:</label>
               <input
-                type="text"
+                type="email"
                 id="correo"
                 name="correo"
                 value={formData.correo}
                 onChange={handleChange}
                 placeholder="Ingrese Email"
+                required
                 
               />
 
